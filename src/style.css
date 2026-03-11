@@ -11,11 +11,23 @@
     --border: #333;
 }
 
+body{
+    background-color: gray;
+}
+#LOGO {
+    
+    width: 150px;
+    
+}
+#LOGO > img{
+    width: 100%;
+}
+
 .hero {
     text-align: center;
     padding: 6rem 5% 4rem;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../assets/images/remove.png') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../assets/images/mobile-hero-section-image.png') center/cover no-repeat;
 
     border-radius: 12px;
     margin-bottom: 3rem;
