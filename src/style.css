@@ -1,0 +1,34 @@
+:root {
+    --bg: #121212;
+    --bg-alt: #1e1e1e;
+    --text: #e0e0e0;
+    --text-muted: #aaaaaa;
+    --primary: #d4a017;
+    /* gold accent from logo feel */
+    --primary-dark: #b58900;
+    --green: #2e7d32;
+    --red: #c62828;
+    --border: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 6rem 5% 4rem;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../assets/images/remove.png') center/cover no-repeat;
+
+    border-radius: 12px;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #ddd;
+}
