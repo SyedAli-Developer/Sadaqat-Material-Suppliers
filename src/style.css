@@ -1,3 +1,56 @@
+:root {
+  /* Primary colors – inspired by your red speedy truck */
+  --color-primary: #d32f2f;       /* Main red (Hino truck jaisa bright red) */
+  --color-primary-dark: #b71c1c;  /* Darker red for hover/active */
+  --color-primary-light: #ef5350; /* Lighter red for accents */
+
+  /* Secondary – bricks, energy, delivery vibe */
+  --color-secondary: #f57c00;     /* Strong orange (bricks + truck lights) */
+  --color-secondary-dark: #ef6c00;
+  --color-secondary-light: #ff9800;
+
+  /* Neutral / Industrial colors */
+  --color-dark: #212121;          /* Almost black – strong & professional */
+  --color-gray-dark: #424242;     /* Dark gray for headers, footers */
+  --color-gray: #757575;          /* Mid gray for text */
+  --color-gray-light: #bdbdbd;    /* Light gray for borders, subtle lines */
+  --color-light: #f5f5f5;         /* Very light bg */
+  --color-white: #ffffff;
+  --color-offwhite: #fafafa;      /* Creamish white – clean look */
+
+  /* Accent / Success / Warning */
+  --color-success: #388e3c;       /* Green for "Order Confirmed", "In Stock" */
+  --color-warning: #f9a825;       /* Yellow for low stock, attention */
+  --color-danger: #d32f2f;        /* Red for errors, out of stock */
+  --color-info: #0288d1;          /* Blue for delivery tracking, info */
+
+  /* Shadows – material lifting / truck heavy feel */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.18);
+  --shadow-truck: 0 12px 32px rgba(211, 47, 47, 0.18); /* red glow shadow */
+
+  /* Border radius – modern but not too rounded */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Typography */
+  --font-main: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-heading: 'Montserrat', 'Poppins', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+
+  /* Spacing scale */
+  --space-1: 0.4rem;
+  --space-2: 0.8rem;
+  --space-3: 1.2rem;
+  --space-4: 1.6rem;
+  --space-5: 2.4rem;
+  --space-6: 3.2rem;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,13 +58,53 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-dark);
+  color: var(--color-offwhite);
 }
-
+nav{
+    background-color: var(--color-gray-dark);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px 5px 5px;
+    align-items: center;
+    overflow: hidden;
+    height: 60px;
+}
 .logo{
     width: 100px;
 }
 .logo > img{
     width: 100%;
+}
+.Name{
+    width: 120px;
+}
+.Name > img{
+    width: 100%;
+}
+.div-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.div-flex > button{
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    background-color: var(--color-gray);
+    border: none;
+    border-radius: 15px;
+    color: var(--color-offwhite);
+    cursor: pointer;
+}
+.div-flex > span{
+    cursor: pointer;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: red; */
 }
 
 
