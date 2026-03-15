@@ -1,67 +1,85 @@
 :root {
-  /* Primary colors – inspired by your red speedy truck */
-  --color-primary: #d32f2f;       /* Main red (Hino truck jaisa bright red) */
-  --color-primary-dark: #b71c1c;  /* Darker red for hover/active */
-  --color-primary-light: #ef5350; /* Lighter red for accents */
+    /* Primary colors – inspired by your red speedy truck */
+    --color-primary: #d32f2f;
+    /* Main red (Hino truck jaisa bright red) */
+    --color-primary-dark: #b71c1c;
+    /* Darker red for hover/active */
+    --color-primary-light: #ef5350;
+    /* Lighter red for accents */
 
-  /* Secondary – bricks, energy, delivery vibe */
-  --color-secondary: #f57c00;     /* Strong orange (bricks + truck lights) */
-  --color-secondary-dark: #ef6c00;
-  --color-secondary-light: #ff9800;
+    /* Secondary – bricks, energy, delivery vibe */
+    --color-secondary: #f57c00;
+    /* Strong orange (bricks + truck lights) */
+    --color-secondary-dark: #ef6c00;
+    --color-secondary-light: #ff9800;
 
-  /* Neutral / Industrial colors */
-  --color-dark: #212121;          /* Almost black – strong & professional */
-  --color-gray-dark: #424242;     /* Dark gray for headers, footers */
-  --color-gray: #757575;          /* Mid gray for text */
-  --color-gray-light: #bdbdbd;    /* Light gray for borders, subtle lines */
-  --color-light: #f5f5f5;         /* Very light bg */
-  --color-white: #ffffff;
-  --color-offwhite: #fafafa;      /* Creamish white – clean look */
+    /* Neutral / Industrial colors */
+    --color-dark: #212121;
+    /* Almost black – strong & professional */
+    --color-gray-dark: #424242;
+    /* Dark gray for headers, footers */
+    --color-gray: #757575;
+    /* Mid gray for text */
+    --color-gray-light: #bdbdbd;
+    /* Light gray for borders, subtle lines */
+    --color-light: #f5f5f5;
+    /* Very light bg */
+    --color-white: #ffffff;
+    --color-offwhite: #fafafa;
+    /* Creamish white – clean look */
 
-  /* Accent / Success / Warning */
-  --color-success: #388e3c;       /* Green for "Order Confirmed", "In Stock" */
-  --color-warning: #f9a825;       /* Yellow for low stock, attention */
-  --color-danger: #d32f2f;        /* Red for errors, out of stock */
-  --color-info: #0288d1;          /* Blue for delivery tracking, info */
+    /* Accent / Success / Warning */
+    --color-success: #388e3c;
+    /* Green for "Order Confirmed", "In Stock" */
+    --color-warning: #f9a825;
+    /* Yellow for low stock, attention */
+    --color-danger: #d32f2f;
+    /* Red for errors, out of stock */
+    --color-info: #0288d1;
+    /* Blue for delivery tracking, info */
 
-  /* Shadows – material lifting / truck heavy feel */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.18);
-  --shadow-truck: 0 12px 32px rgba(211, 47, 47, 0.18); /* red glow shadow */
+    /* Shadows – material lifting / truck heavy feel */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.18);
+    --shadow-truck: 0 12px 32px rgba(211, 47, 47, 0.18);
+    /* red glow shadow */
 
-  /* Border radius – modern but not too rounded */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+    /* Border radius – modern but not too rounded */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
 
-  /* Typography */
-  --font-main: 'Inter', 'Segoe UI', system-ui, sans-serif;
-  --font-heading: 'Montserrat', 'Poppins', sans-serif;
+    /* Typography */
+    --font-main: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    --font-heading: 'Montserrat', 'Poppins', sans-serif;
 
-  /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.35s ease;
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.35s ease;
 
-  /* Spacing scale */
-  --space-1: 0.4rem;
-  --space-2: 0.8rem;
-  --space-3: 1.2rem;
-  --space-4: 1.6rem;
-  --space-5: 2.4rem;
-  --space-6: 3.2rem;
+    /* Spacing scale */
+    --space-1: 0.4rem;
+    --space-2: 0.8rem;
+    --space-3: 1.2rem;
+    --space-4: 1.6rem;
+    --space-5: 2.4rem;
+    --space-6: 3.2rem;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--color-gray-light);
-  color: var(--color-offwhite);
+    background-color: var(--color-light);
+    color: var(--color-dark);
 }
-nav{
+
+nav {
     background-color: var(--color-gray-dark);
     display: flex;
     justify-content: space-between;
@@ -70,25 +88,31 @@ nav{
     overflow: hidden;
     height: 60px;
 }
-.logo{
+
+.logo {
     width: 100px;
 }
-.logo > img{
+
+.logo>img {
     width: 100%;
 }
-.Name{
+
+.Name {
     width: 120px;
 }
-.Name > img{
+
+.Name>img {
     width: 100%;
 }
-.div-flex{
+
+.div-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.div-flex > button{
+
+#language-btn {
     padding: 5px 10px;
     font-size: 0.8rem;
     background-color: var(--color-gray);
@@ -96,48 +120,103 @@ nav{
     border-radius: 15px;
     color: var(--color-offwhite);
     cursor: pointer;
+    user-select: none;
 }
-.div-flex > button:hover{
+#language-btn:hover {
+    background-color: var(--color-gray-light);
+    color: var(--color-dark);
+    transition: var(--transition-fast);
+}
+#language-item {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    background-color: var(--color-gray);
+    border: none;
+    border-radius: 15px;
+    color: var(--color-offwhite);
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+#language-item:hover {
     background-color: var(--color-gray-light);
     color: var(--color-dark);
     transition: var(--transition-fast);
 }
 
 /* side bar started */
-#side-bar-status{
+#side-bar-status {
     display: none;
 }
-.navItems{
-    transition: 0.5s ease-out;
-    background-color: #757575fa;
+
+.navItems {
+    transition: right 0.4s ease-out;
+    background-color: var(--color-gray);
     height: 100%;
     width: 70%;
     padding: 15px;
     position: fixed;
     top: 0;
     right: -100%;
+    z-index: 100;
 }
-
 .navItems ul{
+    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
-    font-size: 1.2rem;
 }
-.navItems li{
-    list-style: none;
-}
-
 .navItems a{
     color: var(--color-offwhite);
     text-decoration: none;
+    font-size: 1.2rem;
 }
-#side-bar-status:checked ~ .navItems{
-    display: block;
+#side-bar-status:checked ~ .navItems {
+    right: 0;
+}
+#side-bar-status:checked ~ #overlay{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 10;
+    left: 0;
+    z-index: 99;
 }
 
+
+@media screen and (min-width: 768px) {
+    
+    .navItems {
+        position: static;
+        width: fit-content;
+        height: auto;
+        padding: 0;
+        background: none;
+        display: flex;
+        transition: none;
+        gap: 20px;
+    }
+    
+    .navItems ul {
+        flex-direction: row;
+        margin: 0;
+        gap: 2rem;
+    }
+    
+    
+    #side-bar-status,
+    .open-sidebar,
+    .close-sidebar {
+        display: none;
+    }
+
+    #language-item {
+        display: block;
+    }
+    #language-btn {
+        display: none;
+    }
+}
