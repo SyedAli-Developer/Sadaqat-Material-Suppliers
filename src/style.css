@@ -65,7 +65,7 @@ nav{
     background-color: var(--color-gray-dark);
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px 5px 5px;
+    padding: 5px 5px 5px 5px;
     align-items: center;
     overflow: hidden;
     height: 60px;
@@ -96,6 +96,11 @@ nav{
     border-radius: 15px;
     color: var(--color-offwhite);
     cursor: pointer;
+}
+.div-flex > button:hover{
+    background-color: var(--color-gray-light);
+    color: var(--color-dark);
+    transition: var(--transition-fast);
 }
 .div-flex > span{
     cursor: pointer;
