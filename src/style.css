@@ -127,6 +127,7 @@ nav {
     color: var(--color-dark);
     transition: var(--transition-fast);
 }
+
 #language-item {
     margin-right: 10px;
     padding: 5px 10px;
